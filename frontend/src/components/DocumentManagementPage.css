@@ -1,0 +1,185 @@
+.document-management-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.document-management-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.document-types-section {
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.document-types-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+.document-type-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.document-type-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.document-type-card:hover {
+  transform: translateY(-5px);
+}
+
+.document-type-card .document-icon {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.document-type-card h4 {
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.document-type-card p {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+}
+
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.file-upload-label {
+  flex-grow: 1;
+  background-color: #f8f9fa;
+  border: 2px dashed #ced4da;
+  color: #6c757d;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-upload-label:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.upload-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #218838;
+}
+
+.uploaded-documents-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.uploaded-documents-section h3 {
+  margin-bottom: 15px;
+  color: #495057;
+}
+
+.uploaded-files-list {
+  list-style: none;
+  padding: 0;
+}
+
+.uploaded-file-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.uploaded-file-item svg {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.no-documents {
+  text-align: center;
+  color: #6c757d;
+  padding: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.popup-content h2 {
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.popup-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
